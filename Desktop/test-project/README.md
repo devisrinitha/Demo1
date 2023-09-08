@@ -1,18 +1,37 @@
-# Salesforce DX Project: Next Steps
+Salesforce Account Field Update and Lightning Component
+This repository contains Salesforce code examples for performing the following tasks:
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Create a field on Account named "Number of Contacts":
 
-## How Do You Plan to Deploy Your Changes?
+A custom field called "Number_of_Contacts__c" is created on the Account object.
+This field is automatically populated with the number of contacts related to each account using triggers and automation.
+Build a basic Lightning component:
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+A Lightning Web component named "recentAccounts" is developed.
+The component queries and displays a list of the 10 most recently created accounts.
+Make a basic HTTP callout and print the result:
 
-## Configure Your Salesforce DX Project
+A simple Apex class named "HttpCalloutExample" demonstrates making an HTTP callout to "https://postman-echo.com/get?foo1=bar1&foo2=bar2".
+The response from the callout is printed to the debug logs using System.debug.
+Prerequisites
+Access to a Salesforce developer or sandbox environment.
+Salesforce CLI for deploying the code to your environment (optional).
+Installation and Usage
+Creating the "Number of Contacts" Field:
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Deploy the Apex trigger and class provided in the repository to your Salesforce environment.
+Configure the trigger to run on Contact create, update, and delete events.
+The "Number_of_Contacts__c" field on the Account object will be automatically updated.
+Building and Using the Lightning Component:
 
-## Read All About It
+Deploy the Lightning component to your Salesforce environment.
+Create a Lightning App Page and add the "AccountList" component to it.
+The component will display a list of the 10 most recently created accounts.
+Making the HTTP Callout:
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Deploy the Apex class "HttpCalloutExample" to your Salesforce environment.
+Execute the makeHttpCallout method to make the HTTP callout and view the response in the debug logs.
+Contributing
+Feel free to contribute to this repository by opening issues or creating pull requests.
+
+License
