@@ -35,3 +35,8 @@ Contributing
 Feel free to contribute to this repository by opening issues or creating pull requests.
 
 License
+
+Salesforce Dev Org Details:
+User Name: srinithadevi@salesforce.com
+Password: Srineetha#1job
+
